@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Serveur de voeux - Evry - Enseignements</title>
+	<link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="Administration.html">Procedure Administrative</a></li>
+				<li><a href="Enseignements.html">Enseignements</a></li>
+				<li><a href="Enseignants.html">Enseignants</a></li>
+				<li><a href="Maquette.html">Maquette</a></li>
+				<li><a href="Aide.html">Aide</a></li>
+				<li><a href="#" style="border-right: none;">Contactez Nous</a></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->
+
+		<hr />
+
+	<header><!-- header -->
+		<h1>Enseignements</h1>
+		<hr />
+	</header>
+		<section id="main"><!-- #main content -->
+			<div class="TabResult" style="overflow-x: hidden; overflow-y: scroll; resize: both; width: 940px; height: 300px;">
+				<table >
+					<caption>Voeux</caption>
+						<tr>
+							<th>Semestre</th>
+							<th>Filiere</th>
+							<th>Matiere</th>
+							<th>Plan</th>
+							<th>Pre-requis</th>
+							<th>Objectifs</th>
+							<th>Nombre d'heure</th>
+							<th>Statut cours</th>
+							<th>Voeux</th>
+						<tr>
+							<td>1er Semestre</td>
+							<td>Informatique</td>
+							<td>Base de données</td>
+							<td>SQL, XML</td>
+							<td>N/A</td>
+							<td>Xedix</td>
+							<td>10</td>
+							<td>Non assuré</td>
+							<td><img src="images/Add-icon1.png" alt="Faire un voeux"></td>
+						</tr>
+				</table> 
+			</div>
+			<div class="clearall"></div>
+		<article id="contentsummary">
+			<h3>Formulaire Enseignement</h3>
+				<form action="ajoutEnseignement">
+					<label>Intitullé de la matière :</label> <input type="text" name="matiere" style="width:250px"/><br/><br/>
+					<label>Nombre d'heures :</label> <input type="text" name="nbHeures" style="width:100px"/><br/><br/>
+					<label>Filière :</label> <select name="filiere" style="width:250px">
+							    <option value="Informatique">Informatique</option>
+							    <option value="MOPS">MOPS</option>
+							    <option value="IMBI">IMBI</option>
+							    <option value="MIAGE">MIAGE</option>
+							    <option value="MIAGE">MIAGE Apprentissage</option>
+							    <option value="ASR">ASR</option>
+							</select><br/><br/>
+					<label>Semestre :</label>   <select name="semestre">
+									<option value="S1">S1</option>
+									<option value="S2">S2</option>
+									<option value="S3">S3</option>
+									<option value="S4">S4</option>
+									<option value="S5">S5</option>
+									<option value="S6">S6</option>
+									<option value="S7">S7</option>
+									<option value="S8">S8</option>
+									<option value="S9">S9</option>
+								    </select><br/><br/>
+					<label>Statut du cours :</label> <input type="radio" name="statut" value="activé" />Assuré
+									<input type="radio" name="statut" value="desactivé" />Non assuré<br/><br/>
+					
+				      Plan du cours : <br/>  
+				      <textarea id="plan" class="textareaF">plan du cours</textarea><br/><br/>
+				      Objectifs de l'enseignement :<br /> 
+				      <textarea id="objectifs" class="textareaF">Compétences et connaissances attendues à la fin de l’enseignement</textarea><br/><br/>
+				      <input class="button" type="submit" value="Enregistrer"/>
+				</form>
+			</article>
+
+		</section><!-- end of #main content -->
+	<footer>
+		<br />
+		<p>Copyright - Université d'Evry</p>
+		<br />
+	</footer>
+
+</div><!-- #wrapper -->
+</body>
+</html>
