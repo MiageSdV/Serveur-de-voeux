@@ -1,0 +1,7 @@
+<!ELEMENT enseignant (idEnseignant,nom,prenom,statut?)>
+<!ELEMENT idEnseignant (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT statut (#PCDATA)>
+
+
